@@ -120,16 +120,18 @@
    ============================================================ */
 
 /* ---- Proof strip ---- */
-.proof-strip{ display:flex; align-items:center; justify-content:center; gap:20px; padding:22px 32px; background:var(--bg-alt); flex-wrap:wrap; }
-.proof-item{ text-align:center; }
-.pv{ font-family:'Fraunces',serif; font-size:26px; font-weight:600; color:var(--ink); display:block; line-height:1; margin-bottom:4px; }
-.pl{ font-size:12px; color:var(--ink-soft); font-weight:500; text-transform:uppercase; letter-spacing:0.06em; white-space:nowrap; }
-.proof-dot{ width:4px; height:4px; border-radius:50%; background:var(--line); flex-shrink:0; }
-@media(max-width:480px){ .proof-dot{ display:none; } .proof-strip{ gap:28px 20px; justify-content:space-around; } }
+.proof-strip{ display:grid; grid-template-columns:repeat(4,1fr); background:#fff; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+.proof-item{ text-align:center; padding:36px 24px; border-right:1px solid var(--line); }
+.proof-item:last-child{ border-right:none; }
+.pv{ font-family:'Fraunces',serif; font-size:clamp(32px,3.5vw,48px); font-weight:600; color:var(--ink); display:block; line-height:1; margin-bottom:8px; }
+.pl{ font-size:12px; color:var(--ink-soft); font-weight:600; text-transform:uppercase; letter-spacing:0.1em; white-space:nowrap; }
+.proof-dot{ display:none; }
+@media(max-width:760px){ .proof-strip{ grid-template-columns:repeat(2,1fr); } .proof-item:nth-child(2){ border-right:none; } .proof-item:nth-child(3){ border-right:1px solid var(--line); } .proof-item{ padding:28px 16px; } }
+@media(max-width:420px){ .proof-strip{ grid-template-columns:1fr 1fr; } .proof-item{ border-right:none; border-bottom:1px solid var(--line); } }
 
 /* ---- V5 Hero ---- */
 .hero-v5{ padding:120px 0 100px; text-align:center; position:relative; overflow:hidden; background:var(--ink); }
-.hero-v5::before{ content:''; position:absolute; inset:0; background-image:url('images/alina-harbour-f17/4.jpg'); background-size:cover; background-position:center 30%; opacity:0.28; }
+.hero-v5::before{ content:''; position:absolute; inset:0; background-image:url('https://images.unsplash.com/photo-1611348586755-53c6c0e8e410?w=1600&auto=format&fit=crop&q=80'); background-size:cover; background-position:center 40%; opacity:0.32; }
 .hero-v5 .wrap{ position:relative; z-index:1; }
 @media(max-width:640px){ .hero-v5{ padding:80px 0 72px; } }
 .hero-v5 .hero-eyebrow{ font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:0.12em; color:var(--gold); margin-bottom:20px; display:flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:4px 0; }
@@ -286,28 +288,25 @@
 <div class="proof-strip" aria-label="At a glance">
   <div class="proof-item">
     <span class="pv">240+</span>
-    <span class="pl">Assessed</span>
+    <span class="pl">Stays Assessed</span>
   </div>
-  <div class="proof-dot" aria-hidden="true"></div>
   <div class="proof-item">
     <span class="pv">80+</span>
-    <span class="pl">Curated</span>
+    <span class="pl">Curated Stays</span>
   </div>
-  <div class="proof-dot" aria-hidden="true"></div>
   <div class="proof-item">
     <span class="pv">1,000+</span>
-    <span class="pl">Guest stays</span>
+    <span class="pl">Guest Stays</span>
   </div>
-  <div class="proof-dot" aria-hidden="true"></div>
   <div class="proof-item">
     <span class="pv">&lt; 1 hr</span>
-    <span class="pl">Response time</span>
+    <span class="pl">Response Time</span>
   </div>
 </div>
 
 <!-- ===================== STAYS GRID ===================== -->
 <section class="stays-section" id="stays">
-  <div class="wrap" style="max-width:1400px;">
+  <div class="wrap">
     <div class="section-hd" style="margin-bottom:28px;">
       <span class="eyebrow">Featured stays</span>
       <h2>Homes our guests love</h2>

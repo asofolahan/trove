@@ -29,7 +29,8 @@ h1,h2,h3{ font-family:'Fraunces',Georgia,serif; font-weight:600; margin:0; lette
 p{ margin:0; }
 a{ color:inherit; text-decoration:none; }
 img{ max-width:100%; }
-.wrap{ max-width:1120px; margin:0 auto; padding:0 32px; }
+.wrap{ max-width:1400px; margin:0 auto; padding:0 40px; }
+.wrap--narrow{ max-width:1120px; }
 section{ padding:88px 0; }
 @media (max-width:640px){ section{ padding:56px 0; } .wrap{ padding:0 20px; } }
 .alt-bg{ background:var(--bg-alt); }
