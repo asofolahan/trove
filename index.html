@@ -120,18 +120,19 @@
    ============================================================ */
 
 /* ---- Proof strip ---- */
-.proof-strip{ display:grid; grid-template-columns:repeat(4,1fr); background:#fff; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
-.proof-item{ text-align:center; padding:36px 24px; border-right:1px solid var(--line); }
-.proof-item:last-child{ border-right:none; }
+.proof-strip{ display:flex; align-items:center; padding:48px 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+.proof-item{ flex:1; text-align:center; padding:0 16px; }
 .pv{ font-family:'Fraunces',serif; font-size:clamp(32px,3.5vw,48px); font-weight:600; color:var(--ink); display:block; line-height:1; margin-bottom:8px; }
 .pl{ font-size:12px; color:var(--ink-soft); font-weight:600; text-transform:uppercase; letter-spacing:0.1em; white-space:nowrap; }
-.proof-dot{ display:none; }
-@media(max-width:760px){ .proof-strip{ grid-template-columns:repeat(2,1fr); } .proof-item:nth-child(2){ border-right:none; } .proof-item:nth-child(3){ border-right:1px solid var(--line); } .proof-item{ padding:28px 16px; } }
-@media(max-width:420px){ .proof-strip{ grid-template-columns:1fr 1fr; } .proof-item{ border-right:none; border-bottom:1px solid var(--line); } }
+.proof-dot{ width:5px; height:5px; border-radius:50%; background:var(--line); flex-shrink:0; }
+@media(max-width:640px){ .proof-strip{ flex-wrap:wrap; padding:32px 0; } .proof-item{ flex:0 0 50%; padding:20px 0; } .proof-dot{ display:none; } }
 
 /* ---- V5 Hero ---- */
-.hero-v5{ padding:120px 0 100px; text-align:center; position:relative; overflow:hidden; background:var(--ink); }
-.hero-v5::before{ content:''; position:absolute; inset:0; background-image:url('https://images.unsplash.com/photo-1611348586755-53c6c0e8e410?w=1600&auto=format&fit=crop&q=80'); background-size:cover; background-position:center 40%; opacity:0.32; }
+.hero-v5{ padding:120px 0 100px; text-align:center; position:relative; overflow:hidden;
+  background: linear-gradient(160deg, #0a1f16 0%, #152420 35%, #1b3328 60%, #243d30 80%, #1a2e22 100%); }
+.hero-v5::before{ content:''; position:absolute; inset:0;
+  background: radial-gradient(ellipse 80% 60% at 60% 40%, rgba(180,140,60,0.12) 0%, transparent 70%),
+              radial-gradient(ellipse 50% 80% at 20% 80%, rgba(45,100,70,0.18) 0%, transparent 60%); }
 .hero-v5 .wrap{ position:relative; z-index:1; }
 @media(max-width:640px){ .hero-v5{ padding:80px 0 72px; } }
 .hero-v5 .hero-eyebrow{ font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:0.12em; color:var(--gold); margin-bottom:20px; display:flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:4px 0; }
@@ -290,14 +291,17 @@
     <span class="pv">240+</span>
     <span class="pl">Stays Assessed</span>
   </div>
+  <div class="proof-dot" aria-hidden="true"></div>
   <div class="proof-item">
     <span class="pv">80+</span>
     <span class="pl">Curated Stays</span>
   </div>
+  <div class="proof-dot" aria-hidden="true"></div>
   <div class="proof-item">
     <span class="pv">1,000+</span>
     <span class="pl">Guest Stays</span>
   </div>
+  <div class="proof-dot" aria-hidden="true"></div>
   <div class="proof-item">
     <span class="pv">&lt; 1 hr</span>
     <span class="pl">Response Time</span>
