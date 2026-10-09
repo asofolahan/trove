@@ -77,7 +77,7 @@ window.KT = {
     /* --- Alina Harbour Collection (4 units — same spec, same price, same building) --- */
     /* Floor 17: real photos + highlight video */
     { code:'KT-K01D', slug:'alina-harbour-f17', name:'Alina Harbour · Floor 17', loc:'Westlands, Nairobi', meta:'2 Beds · 2 Baths', trips:['executive','couples','family'], fromUSD:94, airbnbUrl:'', photoCount:9, collection:true, collectionCode:'COL-AH01',
-      videoUrl:'assets/video/alina-harbour-highlight.mp4',
+      videoUrl:'https://github.com/asofolahan/trove/releases/download/trove-vidz/Alina.Hub.Highlight.Video.mp4',
       fallback:['135deg,#3a4f45,#152420','135deg,#2E4038,#0f1a17','135deg,#4a6355,#152420','135deg,#1a2e24,#0f1a17','135deg,#3a4f45,#152420','135deg,#2E4038,#0f1a17','135deg,#4a6355,#152420','135deg,#2E4038,#0f1a17','135deg,#3a4f45,#152420'] },
     { code:'KT-K01A', slug:'alina-harbour', name:'Alina Harbour · Floor 3', loc:'Westlands, Nairobi', meta:'2 Beds · 2 Baths', trips:['executive','couples','family'], fromUSD:94, airbnbUrl:'', photoCount:3, collection:true, collectionCode:'COL-AH01',
       imgUrls:['https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop','https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800&auto=format&fit=crop','https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&auto=format&fit=crop'],
