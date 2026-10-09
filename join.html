@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Join free | Karibu Trove</title>
+<meta name="description" content="Join the Karibu Trove membership free and get $20 toward your next stay at a hand-picked Nairobi apartment. Earn points on every stay.">
+<meta property="og:title" content="Join Karibu Trove free, get $20 toward your next stay">
+<meta property="og:description" content="A free membership across Nairobi's hand-picked Collection — apartments, homes and studios.">
+<meta property="og:image" content="https://kaributrove.com/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#152420">
+<meta name="robots" content="noindex,follow">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="./"><span class="mark"></span>Karibu Trove</a>
+    <a class="nav-back" href="./">Back to the site</a>
+  </div>
+</nav>
+
+<main class="form-page">
+  <div class="wrap form-grid">
+
+    <div class="form-pitch">
+      <span class="eyebrow-tag">Free membership</span>
+      <h1>You found a good one. There are more.</h1>
+      <p class="lede">Join the Karibu Trove Collection — hand-picked apartments, homes and studios in Nairobi — and get <strong><span data-cfg="CREDIT_USD" data-fmt="usd">$20</span> toward your next stay</strong>.</p>
+      <ul class="pitch-list">
+        <li><b><span data-cfg="CREDIT_USD" data-fmt="usd">$20</span> welcome credit</b><span>On your first direct stay of <span data-cfg="CREDIT_MIN_NIGHTS">3</span>+ nights at any Collection stay.</span></li>
+        <li><b>Points on every stay</b><span>Redeem for stays, airport pickup, taxi vouchers and partner perks.</span></li>
+        <li><b>The Curated list</b><span>Apartments already checked and matched to the kind of trip you're planning.</span></li>
+        <li><b>Recognized everywhere</b><span>Every host in the Collection knows you from your first message.</span></li>
+      </ul>
+      <p class="hero-fine" id="foundingLine"></p>
+    </div>
+
+    <div class="form-card">
+      <form id="leadForm" data-form="member" novalidate>
+        <div id="formView">
+          <h2>Join in 30 seconds</h2>
+          <p class="sub">No app, no password.</p>
+          <div class="src-note" id="srcNote"></div>
+
+          <div class="field" data-field="name">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+            <div class="errmsg">Please add your name.</div>
+          </div>
+
+          <div class="field" data-field="whatsapp">
+            <label for="whatsapp">WhatsApp number <span class="opt">(include country code)</span></label>
+            <input type="tel" id="whatsapp" name="whatsapp" autocomplete="tel" inputmode="tel" placeholder="+1 555 123 4567">
+            <div class="errmsg">Please add a WhatsApp number or an email below.</div>
+          </div>
+
+          <div class="field" data-field="email">
+            <label for="email">Email <span class="opt">(optional if you gave WhatsApp)</span></label>
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com">
+            <div class="errmsg">That email doesn't look right.</div>
+          </div>
+
+          <div class="field">
+            <label for="stayed">Where did you stay?</label>
+            <select id="stayed" name="stayed_at"></select>
+          </div>
+
+          <div class="two-up">
+            <div class="field">
+              <label for="trip">Your kind of trip</label>
+              <select id="trip" name="trip_type">
+                <option value="">Choose one</option>
+                <option>Business or work</option>
+                <option>Family or group</option>
+                <option>Couples getaway</option>
+                <option>Longer stay (weeks or months)</option>
+                <option>A bit of everything</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="when">Back in Nairobi?</label>
+              <select id="when" name="next_trip">
+                <option value="">Choose one</option>
+                <option>In the next 3 months</option>
+                <option>In 3 to 12 months</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="hp" aria-hidden="true"><label>Leave this empty<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+          <input type="hidden" name="src" id="src" value="">
+
+          <label class="check" id="consentRow">
+            <input type="checkbox" id="consent" name="consent">
+            <span>I agree to be contacted by Karibu Trove about my membership and stays, and to my details being used as described in the <a href="privacy.html" target="_blank" rel="noopener">privacy note</a> and <a href="terms.html" target="_blank" rel="noopener">terms</a>.</span>
+          </label>
+
+          <button class="btn btn-accent btn-block" type="submit" id="submitBtn">Join free, get <span data-cfg="CREDIT_USD" data-fmt="usd">$20</span></button>
+          <p class="form-fine">Free to join. We don't sell your details.</p>
+        </div>
+
+        <div class="success" id="successView" aria-live="polite">
+          <div class="tick">&#10003;</div>
+          <h2 id="okTitle">Welcome to Karibu Trove</h2>
+          <p id="okText"></p>
+          <a class="btn btn-wa btn-block" id="okWa" target="_blank" rel="noopener">Confirm on WhatsApp</a>
+          <a class="btn btn-outline btn-block" href="./#curated">See the Curated list</a>
+          <p class="alt" id="okAlt"></p>
+        </div>
+      </form>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div><div class="foot-logo">Karibu Trove</div><p style="max-width:300px; opacity:0.7; font-size:14px;">A free membership across Nairobi's hand-picked Collection — apartments, homes &amp; studios.</p></div>
+      <div class="foot-cols">
+        <div class="foot-col"><h4>Reach us</h4><a href="#" data-wa="Hi Karibu Trove!">WhatsApp</a><a href="#" data-email></a></div>
+        <div class="foot-col"><h4>Legal</h4><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a></div>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2026 Karibu Trove, Nairobi.</p>
+  </div>
+</footer>
+
+<script src="assets/config.js"></script>
+<script src="assets/site.js"></script>
+<script src="assets/forms.js"></script>
+</body>
+</html>

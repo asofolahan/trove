@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apply as a host | Karibu Trove</title>
+<meta name="description" content="Apply to bring your Nairobi apartment into the Karibu Trove Collection. Free to join, keep your Airbnb listing, get referred guests and be featured.">
+<meta property="og:title" content="Apply as a host | Karibu Trove">
+<meta property="og:description" content="Keep your apartment and your listing. Get referred guests and be featured.">
+<meta property="og:image" content="https://kaributrove.com/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#432C5A">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="mode-owner">
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="./?view=owner"><span class="mark"></span>Karibu Trove</a>
+    <a class="nav-back" href="./?view=owner">Back to the site</a>
+  </div>
+</nav>
+
+<main class="form-page">
+  <div class="wrap form-grid">
+
+    <div class="form-pitch">
+      <span class="eyebrow-tag">For apartment owners</span>
+      <h1>Bring your apartment into the Collection.</h1>
+      <p class="lede">Keep your apartment, your name and your Airbnb listing. Join for referred guests, a place on the Curated list and a shared standard guests trust.</p>
+      <ul class="pitch-list">
+        <li><b><span data-cfg="HOST_BONUS_KES" data-fmt="kes">KSH 1,000</span> founding-host bonus</b><span>For the first <span data-cfg="HOST_BONUS_SLOTS">50</span> hosts to join.</span></li>
+        <li><b>Referred guests</b><span>Members from our network, matched to your kind of apartment.</span></li>
+        <li><b>Featured</b><span>On the Curated list, Instagram, TikTok and our WhatsApp Channel.</span></li>
+        <li><b>Free to join</b><span>A small commission applies only to direct bookings through the Collection. We share the rate before you commit.</span></li>
+      </ul>
+    </div>
+
+    <div class="form-card">
+      <form id="leadForm" data-form="host" novalidate>
+        <div id="formView">
+          <h2>Apply as a host</h2>
+          <p class="sub">A couple of minutes. We'll follow up on WhatsApp for a short call.</p>
+
+          <div class="field" data-field="name">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+            <div class="errmsg">Please add your name.</div>
+          </div>
+
+          <div class="field" data-field="whatsapp">
+            <label for="whatsapp">WhatsApp number <span class="opt">(include country code)</span></label>
+            <input type="tel" id="whatsapp" name="whatsapp" autocomplete="tel" inputmode="tel" placeholder="+254 7XX XXX XXX">
+            <div class="errmsg">Please add your WhatsApp number.</div>
+          </div>
+
+          <div class="field" data-field="email">
+            <label for="email">Email <span class="opt">(optional)</span></label>
+            <input type="email" id="email" name="email" autocomplete="email">
+            <div class="errmsg">That email doesn't look right.</div>
+          </div>
+
+          <div class="two-up">
+            <div class="field" data-field="apartment">
+              <label for="apartment">Apartment or building name</label>
+              <input type="text" id="apartment" name="apartment" required>
+              <div class="errmsg">Please add the apartment name.</div>
+            </div>
+            <div class="field">
+              <label for="hood">Neighborhood</label>
+              <select id="hood" name="neighborhood">
+                <option>Kilimani</option><option>Westlands</option><option>Upper Hill</option><option>Riverside</option><option>Lavington</option><option>Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="listing">Airbnb listing link <span class="opt">(optional)</span></label>
+            <input type="url" id="listing" name="listing_url" placeholder="https://www.airbnb.com/rooms/...">
+          </div>
+
+          <div class="two-up">
+            <div class="field">
+              <label for="units">Apartments you manage</label>
+              <select id="units" name="units"><option>1</option><option>2</option><option>3 to 5</option><option>6 or more</option></select>
+            </div>
+            <div class="field">
+              <label for="rating">Rating and reviews <span class="opt">(optional)</span></label>
+              <input type="text" id="rating" name="rating" placeholder="e.g. 4.9, 85 reviews">
+            </div>
+          </div>
+
+          <fieldset>
+            <legend>How would you like to take part?</legend>
+            <label class="check" style="margin:0 0 8px;"><input type="checkbox" name="role_collection" value="yes" checked><span>Collection Host: feature my apartment on the Curated list</span></label>
+            <label class="check" style="margin:0 0 8px;"><input type="checkbox" name="role_welcome" value="yes" checked><span>Welcome Host: place the in-apartment membership card</span></label>
+          </fieldset>
+
+          <div class="hp" aria-hidden="true"><label>Leave this empty<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+
+          <label class="check" id="consentRow">
+            <input type="checkbox" id="consent" name="consent">
+            <span>I agree to be contacted by Karibu Trove about hosting, and to my details being used as described in the <a href="privacy.html" target="_blank" rel="noopener">privacy note</a>.</span>
+          </label>
+
+          <button class="btn btn-accent btn-block" type="submit" id="submitBtn">Send my application</button>
+          <p class="form-fine">Free to apply. No commitment until we've spoken.</p>
+        </div>
+
+        <div class="success" id="successView" aria-live="polite">
+          <div class="tick">&#10003;</div>
+          <h2 id="okTitle">Thank you, we've got it</h2>
+          <p id="okText"></p>
+          <a class="btn btn-wa btn-block" id="okWa" target="_blank" rel="noopener">Say hello on WhatsApp</a>
+          <a class="btn btn-outline btn-block" href="./?view=owner">Back to the site</a>
+          <p class="alt" id="okAlt"></p>
+        </div>
+      </form>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div><div class="foot-logo">Karibu Trove</div><p style="max-width:300px; opacity:0.7; font-size:14px;">Kenya's vetted Collection — apartments, homes &amp; studios.</p></div>
+      <div class="foot-cols">
+        <div class="foot-col"><h4>Reach us</h4><a href="#" data-wa="Hi Karibu Trove!">WhatsApp</a><a href="#" data-email></a></div>
+        <div class="foot-col"><h4>Legal</h4><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a></div>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2026 Karibu Trove, Nairobi.</p>
+  </div>
+</footer>
+
+<script src="assets/config.js"></script>
+<script src="assets/site.js"></script>
+<script src="assets/forms.js"></script>
+</body>
+</html>
