@@ -76,7 +76,7 @@ window.KT = {
   properties: [
     /* --- Alina Harbour Collection (4 units — same spec, same price, same building) --- */
     /* Floor 17: real photos + highlight video */
-    { code:'KT-K01D', slug:'alina-harbour-f17', name:'Alina Harbour · Floor 17', loc:'Kilimani, Nairobi', meta:'2 Beds · 2 Baths', trips:['executive','couples','family'], fromUSD:94, airbnbUrl:'', photoCount:9, collection:true, collectionCode:'COL-AH01',
+    { code:'KT-K01D', slug:'alina-harbour-f17', name:'Alina Harbour · Floor 17', loc:'Kilimani, Nairobi', meta:'2 Beds · 2 Baths', trips:['executive','couples','family'], fromUSD:94, airbnbUrl:'https://www.airbnb.com/rooms/1618073186043694871', photoCount:9, collection:true, collectionCode:'COL-AH01',
       videoUrl:'https://github.com/asofolahan/trove/releases/download/trove-vidz/Alina.Hub.Highlight.Video.mp4',
       fallback:['135deg,#3a4f45,#152420','135deg,#2E4038,#0f1a17','135deg,#4a6355,#152420','135deg,#1a2e24,#0f1a17','135deg,#3a4f45,#152420','135deg,#2E4038,#0f1a17','135deg,#4a6355,#152420','135deg,#2E4038,#0f1a17','135deg,#3a4f45,#152420'] },
     { code:'KT-K01A', slug:'alina-harbour', name:'Alina Harbour · Floor 3', loc:'Westlands, Nairobi', meta:'2 Beds · 2 Baths', trips:['executive','couples','family'], fromUSD:94, airbnbUrl:'', photoCount:3, collection:true, collectionCode:'COL-AH01',
