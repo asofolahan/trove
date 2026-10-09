@@ -103,7 +103,9 @@ window.KT = {
     { code:'KT-U02', slug:'oakdale-loft',      name:'Oakdale Loft',      loc:'Upper Hill, Nairobi', meta:'1 Bed · 1 Bath',   trips:['executive','couples'],  fromUSD:null, airbnbUrl:'', photoCount:3,
       fallback:['135deg,#5a3d3d,#152420','135deg,#7a5252,#2a1515','135deg,#3d2828,#152420'] },
     { code:'KT-R02', slug:'greenview-flat',    name:'Greenview Flat',    loc:'Riverside, Nairobi',  meta:'2 Beds · 2 Baths', trips:['longstay','family'],    fromUSD:null, airbnbUrl:'', photoCount:3,
-      fallback:['135deg,#4a5a35,#152420','135deg,#647a48,#1c2415','135deg,#2f3a20,#152420'] }
+      fallback:['135deg,#4a5a35,#152420','135deg,#647a48,#1c2415','135deg,#2f3a20,#152420'] },
+    { code:'KT-K03', slug:'sandbrook-residence', name:'Sandbrook Residence', loc:'Kilimani, Nairobi', meta:'2 Beds · 2 Baths', trips:['executive','longstay','couples'], fromUSD:null, airbnbUrl:'', photoCount:3,
+      fallback:['135deg,#3d5c58,#152420','135deg,#2a4440,#0f1a18','135deg,#4e706b,#152420'] }
   ],
 
   /* ---------- ANALYTICS ---------- */

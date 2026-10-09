@@ -128,11 +128,14 @@
 @media(max-width:480px){ .proof-dot{ display:none; } .proof-strip{ gap:28px 20px; justify-content:space-around; } }
 
 /* ---- V5 Hero ---- */
-.hero-v5{ padding:100px 0 88px; text-align:center; }
-@media(max-width:640px){ .hero-v5{ padding:72px 0 64px; } }
-.hero-v5 .hero-eyebrow{ font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:var(--accent-deep); margin-bottom:18px; display:block; }
-.hero-v5 h1{ font-size:clamp(36px,6vw,64px); line-height:1.05; margin-bottom:18px; max-width:760px; margin-left:auto; margin-right:auto; }
-.hero-v5 .lede{ font-size:clamp(16px,2vw,18px); color:var(--ink-soft); line-height:1.65; max-width:520px; margin:0 auto 36px; }
+.hero-v5{ padding:120px 0 100px; text-align:center; position:relative; overflow:hidden; background:var(--ink); }
+.hero-v5::before{ content:''; position:absolute; inset:0; background-image:url('images/alina-harbour-f17/4.jpg'); background-size:cover; background-position:center 30%; opacity:0.28; }
+.hero-v5 .wrap{ position:relative; z-index:1; }
+@media(max-width:640px){ .hero-v5{ padding:80px 0 72px; } }
+.hero-v5 .hero-eyebrow{ font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:0.12em; color:var(--gold); margin-bottom:20px; display:flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:4px 0; }
+.hero-v5 .hero-eyebrow .ey-sep{ display:inline-block; width:3px; height:3px; border-radius:50%; background:var(--gold); opacity:0.5; margin:0 10px; vertical-align:middle; }
+.hero-v5 h1{ font-size:clamp(36px,6vw,64px); line-height:1.05; margin-bottom:18px; max-width:760px; margin-left:auto; margin-right:auto; color:#fff; }
+.hero-v5 .lede{ font-size:clamp(16px,2vw,18px); color:rgba(241,236,217,0.72); line-height:1.65; max-width:520px; margin:0 auto 36px; }
 .hero-v5 .hero-ctas{ display:flex; gap:12px; flex-wrap:wrap; justify-content:center; }
 
 /* ---- Section eyebrow / head ---- */
@@ -253,12 +256,12 @@
 </nav>
 
 <!-- ===================== HERO ===================== -->
-<section class="hero-v5" style="background:var(--bg-alt);">
+<section class="hero-v5">
   <div class="wrap">
 
     <!-- Variant A -->
     <div data-v="a">
-      <span class="hero-eyebrow">Kenya's vetted Collection &nbsp;·&nbsp; Apartments &nbsp;·&nbsp; Homes &nbsp;·&nbsp; Studios</span>
+      <span class="hero-eyebrow">Kenya's vetted Collection<span class="ey-sep" aria-hidden="true"></span>Apartments<span class="ey-sep" aria-hidden="true"></span>Homes<span class="ey-sep" aria-hidden="true"></span>Studios</span>
       <h1>Book. Without the Guesswork.</h1>
       <p class="lede">Every stay on this list has been hand-picked before it joins.</p>
       <div class="hero-ctas">
@@ -268,7 +271,7 @@
 
     <!-- Variant B -->
     <div data-v="b">
-      <span class="hero-eyebrow">Kenya's vetted Collection &nbsp;·&nbsp; Apartments &nbsp;·&nbsp; Homes &nbsp;·&nbsp; Studios</span>
+      <span class="hero-eyebrow">Kenya's vetted Collection<span class="ey-sep" aria-hidden="true"></span>Apartments<span class="ey-sep" aria-hidden="true"></span>Homes<span class="ey-sep" aria-hidden="true"></span>Studios</span>
       <h1>Don't gamble on a listing. Every stay here is vetted.</h1>
       <p class="lede">Every stay on this list has been hand-picked before it joins.</p>
       <div class="hero-ctas">
@@ -304,7 +307,7 @@
 
 <!-- ===================== STAYS GRID ===================== -->
 <section class="stays-section" id="stays">
-  <div class="wrap">
+  <div class="wrap" style="max-width:1400px;">
     <div class="section-hd" style="margin-bottom:28px;">
       <span class="eyebrow">Featured stays</span>
       <h2>Homes our guests love</h2>
