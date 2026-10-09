@@ -2,3 +2,7 @@
 Thumbs.db
 *.log
 node_modules/
+# Videos are too large for GitHub — host externally (see assets/video/README.md)
+assets/video/*.mp4
+assets/video/*.mov
+assets/video/*.webm
