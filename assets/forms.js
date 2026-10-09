@@ -85,10 +85,18 @@
              (d.trip_type ? 'Trip type: ' + d.trip_type + '\n' : '') +
              'Please confirm my $' + KT.CREDIT_USD + ' welcome credit.';
     }
+    var roles = [];
+    if (d.role_collection === 'yes') roles.push('Collection Host');
+    if (d.role_welcome === 'yes') roles.push('Welcome Host');
     return 'Hi Karibu Trove! I just applied as a host.\n' +
            'Name: ' + d.name + '\n' +
-           'Apartment: ' + d.apartment + ' (' + d.neighborhood + ')\n' +
+           (d.whatsapp ? 'WhatsApp: ' + d.whatsapp + '\n' : '') +
+           (d.email ? 'Email: ' + d.email + '\n' : '') +
+           'Apartment: ' + d.apartment + (d.neighborhood ? ' (' + d.neighborhood + ')' : '') + '\n' +
            (d.listing_url ? 'Listing: ' + d.listing_url + '\n' : '') +
+           (d.units ? 'Units: ' + d.units + '\n' : '') +
+           (d.rating ? 'Rating: ' + d.rating + '\n' : '') +
+           (roles.length ? 'Roles: ' + roles.join(', ') + '\n' : '') +
            'Looking forward to a quick call.';
   }
 
