@@ -81,8 +81,11 @@
       var where = p ? p.name + ' (' + p.loc.split(',')[0] + ')' : (d.stayed_at === 'OTHER' ? 'another Nairobi apartment' : 'not sure');
       return 'Hi Karibu Trove! I just joined as a member.\n' +
              'Name: ' + d.name + '\n' +
+             (d.whatsapp ? 'WhatsApp: ' + d.whatsapp + '\n' : '') +
+             (d.email    ? 'Email: '    + d.email    + '\n' : '') +
              'Stayed at: ' + where + (d.src ? '\nRef: ' + d.src : '') + '\n' +
-             (d.trip_type ? 'Trip type: ' + d.trip_type + '\n' : '') +
+             (d.trip_type  ? 'Trip type: '  + d.trip_type  + '\n' : '') +
+             (d.next_trip  ? 'Back in Nairobi: ' + d.next_trip + '\n' : '') +
              'Please confirm my $' + KT.CREDIT_USD + ' welcome credit.';
     }
     var roles = [];
