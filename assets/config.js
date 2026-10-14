@@ -19,7 +19,7 @@ window.KT = {
      WhatsApp as a pre-filled message, which works with no backend at all.
      To also log every sign-up to a Google Sheet, paste the web-app URL of the
      Google Apps Script described in SETUP-FORMS.md. */
-  FORM_ENDPOINT: '',
+  FORM_ENDPOINT: 'https://script.google.com/macros/s/AKfycbzz__-M2cz72_MR6Q16z5beS73U0Ey9Kwa5CgeTmYnCYupsDlNcfgUJTTmBL_cSlTTIAQ/exec',
 
   /* ---------- THE OFFER (edit here; the whole site follows) ---------- */
   CREDIT_USD: 20,                     // welcome credit
